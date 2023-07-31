@@ -37,6 +37,8 @@ jobs:
       uses: cda-tum/setup-z3@v1.0.10
       with:
         version: 4.8.9
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Install Liquid Haskell
       run: |
